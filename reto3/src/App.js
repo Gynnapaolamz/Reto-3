@@ -12,7 +12,7 @@ import Testimonials from './componentes/carrusel/Testimonials';
 import Footer from './componentes/footer/Footer';
 import Historia from './componentes/historia/Historia';
 import QuienesSomos from './componentes/quienesSomos/QuienesSomos';
-import "bootstrap/dist/css/bootstrap.min.css";
+import "./css/bootstrap.min.css";
 
 function App() {
   return (

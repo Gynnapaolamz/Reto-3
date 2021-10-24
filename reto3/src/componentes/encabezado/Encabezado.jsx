@@ -2,8 +2,8 @@ import React from 'react';
 import "./Encabezado.css";
 import logo from "../../media/logo@2x.png";
 import cart from "../../media/cart.png";
-import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../../../node_modules/bootstrap/dist/css/headers.css";
+import "../../css/bootstrap.min.css";
+import "../../css/headers.css";
 
 const Encabezado = () => {
     return (

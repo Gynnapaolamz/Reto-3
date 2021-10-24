@@ -19,9 +19,9 @@ const Footer = () => {
                 <div className="container gridLetras">
                     <div>
                     <ul className="nav nav-pills">
-                        <li className="nav-item"><a href="#" className="nav-link letras"><b>MAPA DEL SITIO</b></a></li>
-                        <li className="nav-item"><a href="#" className="nav-link letras"><b>CONTÁCTANOS</b></a></li>
-                        <li className="nav-item"><a href="#" className="nav-link letras"><b>RESERVAS</b></a></li>
+                        <li className="nav-item"><a href="#" className="nav-link text-white"><b>MAPA DEL SITIO</b></a></li>
+                        <li className="nav-item"><a href="#" className="nav-link text-white"><b>CONTÁCTANOS</b></a></li>
+                        <li className="nav-item"><a href="#" className="nav-link text-white"><b>RESERVAS</b></a></li>
                     </ul>
                     </div>
                     <div>

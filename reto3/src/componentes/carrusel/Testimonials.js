@@ -1,6 +1,6 @@
 import React from 'react'
-import "../../zbootstrap.min.css";
-import "../../../node_modules/bootstrap/dist/css/carousel.css";
+import "../../css/bootstrap.min.css";
+import "../../css/carousel.css";
 import testimonio_1 from "../../media/testimonio1@2x.png";
 import testimonio_2 from "../../media/testimonio2@2x.png";
 import testimonio_3 from "../../media/testimonio3@2x.png";
