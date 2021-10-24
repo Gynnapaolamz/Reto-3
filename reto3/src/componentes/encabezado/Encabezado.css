@@ -1,0 +1,13 @@
+.gridHeader{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.logoColum{
+    width: 400px;
+    padding-left: 110px;
+}
+
+.accColum{
+    width: 300px;
+}

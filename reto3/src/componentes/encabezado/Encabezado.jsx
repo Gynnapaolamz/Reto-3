@@ -8,8 +8,8 @@ import "../../../node_modules/bootstrap/dist/css/headers.css";
 const Encabezado = () => {
     return (
         <div className="container">
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <div className="col-md-1">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light gridHeader">
+                <div className="logoColum">
                     <a href="#" className="navbar-brand px-5"><img src={logo} width="89" height="70"/></a>
                 </div>
                 <div className="container-fluid px-5">
@@ -17,7 +17,7 @@ const Encabezado = () => {
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div className="collapse navbar-collapse accColum" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                         <a className="nav-link active" aria-current="page" href="#">Quienes somos</a>
                         <a className="nav-link" href="#">Menú</a>

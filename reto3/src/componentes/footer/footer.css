@@ -1,0 +1,14 @@
+.grid {
+    display: grid;
+    grid-template-columns: 30% 40% 30%; 
+    align-items: center;
+}
+
+.foto{
+    width: 190px;
+}
+
+.gridLetras{
+    display: grid;
+    grid-template-rows: 5% 95%;
+}
