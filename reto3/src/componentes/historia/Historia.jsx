@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import history from "../../media/foto42x.png";
-import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../../css/bootstrap.min.css";
 
 const Historia = () => {
     return (  

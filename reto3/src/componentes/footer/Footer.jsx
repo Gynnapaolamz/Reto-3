@@ -1,11 +1,11 @@
 import React from 'react';
 import "./footer.css";
 import logo from "../../media/logo@2x.png";
-import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../../../node_modules/bootstrap/dist/css/headers.css";
-import {GoogleMap,
+import "../../css/bootstrap.min.css";
+import "../../headers.css";
+/*import {GoogleMap,
         withScriptjs,
-        withGoogleMap} from 'react-google-maps';
+        withGoogleMap} from 'react-google-maps';*/
 
 
 const Footer = () => {

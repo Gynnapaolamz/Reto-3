@@ -1,0 +1,28 @@
+.imgSize{
+
+    width:auto;
+}
+
+    @media (min-width: 576px) { 
+        .imgSize{
+
+        width:auto;
+        height: 160px;
+    }
+}
+ 
+    @media (min-width: 768px) { 
+        .imgSize{
+
+        width:auto;
+        height: 200px;
+    } }
+    
+    @media (min-width: 992px) {      
+      .imgSize{
+
+        width:auto;
+        height: 400px;
+    } }
+    
+  

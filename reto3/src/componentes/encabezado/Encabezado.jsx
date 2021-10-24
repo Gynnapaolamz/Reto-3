@@ -3,11 +3,11 @@ import "./Encabezado.css";
 import logo from "../../media/logo@2x.png";
 import cart from "../../media/cart.png";
 import "../../css/bootstrap.min.css";
-import "../../css/headers.css";
+
 
 const Encabezado = () => {
     return (
-        <div className="container">
+        <div className="container-fluid">
             <nav className="navbar navbar-expand-lg navbar-light bg-light gridHeader">
                 <div className="logoColum">
                     <a href="#" className="navbar-brand px-5"><img src={logo} width="89" height="70"/></a>
