@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../../zbootstrap.min.css";
 import "../../../node_modules/bootstrap/dist/css/carousel.css";
 import testimonio_1 from "../../media/testimonio1@2x.png";
 import testimonio_2 from "../../media/testimonio2@2x.png";
