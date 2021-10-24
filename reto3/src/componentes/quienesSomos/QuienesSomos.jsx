@@ -22,4 +22,4 @@ const QuienesSomos = () => {
     
 }
 
-export default QuienesSomos
+export default QuienesSomos;
