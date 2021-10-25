@@ -1,5 +1,8 @@
 import './App.css';
-import {BrowserRouter, Router, Switch} from "react-router-dom";
+import {BrowserRouter as Router, 
+        Route, 
+        Switch, 
+        Link} from "react-router-dom";
 import QuienesSomos from './componentes/quienesSomos/QuienesSomos';
 import Servicios from './componentes/Servicios/Servicio';
 import Contacto from './componentes/Contactanos/Contactanos';
@@ -8,11 +11,15 @@ import Menu from './componentes/Menu/ContainerMenu';
 
 function App() {
   return (
-      <BrowserRouter>
+      <Router>
         <Switch>
-        <Router exact path="/nosotros"  component={Servicios}/>
+        <Route exact path="/nosotros"  component={QuienesSomos}/>
+        <Route exact path="/servicios"  component={Servicios}/>
+        <Route exact path="/contacto"  component={Contacto}/>
+        <Route exact path="/menu" component={Menu}/>
+        <Route exact path="/"></Route>
         </Switch>
-      </BrowserRouter> 
+      </Router> 
   );
 }
 
