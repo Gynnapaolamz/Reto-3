@@ -6,7 +6,7 @@ import fiesta from "../media/fiesta_infantil.jpeg";
 import declaracion from "../media/declaracion.jpeg";
 import despedida from "../media/despedidas.jpeg";
 import cena from "../media/cena.jpeg";
-import Reserva from '../componentes/reserva';
+
 
 import "../css/bootstrap.min.css";
 import "../css/imagen.css";
@@ -64,7 +64,7 @@ class ContainerServicios extends React.Component {
                 </div>
             </div>
             </div>
-            <Reserva/>
+            
             </>
 
         );
