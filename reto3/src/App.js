@@ -8,6 +8,7 @@ import Servicios from './componentes/Servicios/Servicio';
 import Contacto from './componentes/Contactanos/Contactanos';
 import Menu from './componentes/Menu/ContainerMenu';
 import Inicio from './componentes/Inicio/Inicio';
+import Mapa from './componentes/Mapa/Mapa';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/contacto"  component={Contacto}/>
         <Route exact path="/menu" component={Menu}/>
         <Route exact path="/inicio" component={Inicio}/>
+        <Route exact path="/mapa" component={Mapa}/>
         <Route exact path="/"></Route>
         </Switch>
       </Router> 

@@ -5,6 +5,7 @@ import Logo2 from "../../media/icono2@2x.png";
 import Logo3 from "../../media/icono3@2x.png";
 import Logo4 from "../../media/icono4@2x.png";
 import Boton from "../../media/boton.png";
+import "../../css/Inicio.css"
 import "../../css/bootstrap.min.css";
 
 

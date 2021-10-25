@@ -5,6 +5,7 @@ import Menu2 from "../../media/menu2@2x.png";
 import Menu3 from "../../media/menu3@2x.png";
 import Menu4 from "../../media/menu4@2x.png";
 import Menup from "../../media/menu@2x.png";
+import "../../css/Inicio.css"
 import "../../css/bootstrap.min.css";
 
 
