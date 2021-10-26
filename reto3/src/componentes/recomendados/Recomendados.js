@@ -1,9 +1,9 @@
 import React,{Component,} from 'react'
 import Carrousel from "../../componentes/Carrousel"
-import Menu from "../../media/menu1@2x.png";
-import Menu2 from "../../media/menu2@2x.png";
-import Menu3 from "../../media/menu3@2x.png";
-import Menu4 from "../../media/menu4@2x.png";
+import Menu from "../../media/img3.png";
+import Menu2 from "../../media/img4.png";
+import Menu3 from "../../media/img5.png";
+import Menu4 from "../../media/img6.png";
 import Menup from "../../media/menu@2x.png";
 import "../../css/Inicio.css"
 import "../../css/bootstrap.min.css";
@@ -32,16 +32,16 @@ const Recomendados = () =>{
                     </div>
                     <div className="row">
                       <div className="col-md-5">
-                        <Carrousel image={Menu3}/>
+                        <img src={Menu3}/>
                       </div>
                       <div className="col-md-5">
-                        <Carrousel image={Menu4}/> 
+                        <img src={Menu4}/> 
                       </div>
                     </div>
                   </div>
                   <div className="col-md-3">
                     <div className="row">
-                      <Carrousel image={Menup}/>
+                      <img src={Menup}/>
                     </div>
                     <div className="row">
                       <button onclick="window.location.href='./menu.html'" className="btn btn-primary">Consulta el menú</button>
