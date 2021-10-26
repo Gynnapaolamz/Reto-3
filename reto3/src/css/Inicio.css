@@ -1,10 +1,13 @@
-
+.carousel {
+    width: 834px;
+    justify-content: center;
+}
 #carouselExampleFade {
-    width: auto;    
+    width: min-content;    
 }
 .carousel-item {
     width: min-content;
-    
+     
 }
 
 .nosotros {
