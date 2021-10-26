@@ -1,0 +1,10 @@
+.even-style-imagen{
+    background-image: url('../../media/foto3@2x.png');
+    max-width: auto; 
+    height:auto;
+}
+
+.even-style-imagen2{
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+}

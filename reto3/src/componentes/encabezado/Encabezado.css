@@ -11,3 +11,8 @@
 .accColum{
     width: 300px;
 }
+
+.grid2{
+    display: grid;
+    grid-template-columns: 30% 10% 10% 10% 10% 10% 10% 10%;
+}

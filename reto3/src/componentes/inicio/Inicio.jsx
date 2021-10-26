@@ -8,61 +8,57 @@ import Carrousel from "../../componentes/Carrousel";
 import Encabezado from '../../componentes/encabezado/Encabezado';
 import Footer from '../../componentes/footer/Footer';
 import Testimonials from '../../componentes/carrusel/Testimonials';
- 
+import Recomendados from '../../componentes/recomendados/Recomendados';
+import Eventos from '../../componentes/eventos/Eventos';
 
-import "../css/bootstrap.min.css";
-import "../css/Inicio.css";
+import "../../css/bootstrap.min.css";
+import "../../css/Inicio.css";
 
 
-class Inicio extends Component{
+const Inicio = () => {   
 
-    render(){
-    
         return (
           <Fragment>
           <Encabezado/>
+       
+          <div id="carouselExampleFade" className="carousel slide carousel-fade justify-content-center " data-bs-ride="carousel">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <Carrousel image={Imagen1}/>
+              </div>
+              <div className="carousel-item">
+                <Carrousel image={Imagen2}/>
+              </div>
+              <div className="carousel-item">
+                <Carrousel image={Imagen3}/>
+              </div>
+              <div className="carousel-item">
+                <Carrousel image={Imagen4}/>
+              </div>
+              <div className="carousel-item">
+                <Carrousel image={Imagen5}/>
+              </div>
+              </div>
+              <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>
 
-            <>
-        <div id="carouselExampleFade" className="carousel slide carousel-fade justify-content-center " data-bs-ride="carousel">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <Carrousel imagen={Imagen1}/>
-    </div>
-    <div className="carousel-item">
-    <Carrousel imagen={Imagen2}/>
-    </div>
-    <div className="carousel-item">
-    <Carrousel imagen={Imagen3}/>
-    </div>
-    <div className="carousel-item">
-    <Carrousel imagen={Imagen4}/>
-    </div>
-    <div className="carousel-item">
-    <Carrousel imagen={Imagen5}/>
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-</>
-<Recomendados/>
-<br> </br>
-<Eventos/>
-<br> </br>
-<Testimonials/>
-<br> </br>
-   <Footer/> 
-   </Fragment>          
-              );
-    
+            
+        <Recomendados/>
+         
+          <Eventos/> 
+            
+            <Testimonials/> 
+            
+            <Footer/>
+          </Fragment>          
+              )
     }
     
-    }
-    
-export default Carrousel;
+export default Inicio;

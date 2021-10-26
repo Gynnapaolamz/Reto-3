@@ -3,6 +3,12 @@ import "./footer.css";
 import logo from "../../media/logo@2x.png";
 import "../../css/bootstrap.min.css";
 import "../../headers.css";
+import {BrowserRouter as Router, 
+    Route, 
+    Switch, 
+    Link} from "react-router-dom";
+
+
 /*import {GoogleMap,
         withScriptjs,
         withGoogleMap} from 'react-google-maps';*/
@@ -19,9 +25,9 @@ const Footer = () => {
                 <div className="container gridLetras">
                     <div>
                     <ul className="nav nav-pills">
-                        <li className="nav-item"><a href="#" className="nav-link text-white"><b>MAPA DEL SITIO</b></a></li>
-                        <li className="nav-item"><a href="#" className="nav-link text-white"><b>CONTÁCTANOS</b></a></li>
-                        <li className="nav-item"><a href="#" className="nav-link text-white"><b>RESERVAS</b></a></li>
+                        <li className="nav-link"><Link to="/mapaSitio" className="nav-link text-white"><b>MAPA DEL SITIO</b></Link></li>
+                        <li className="nav-link"><Link to="/contacto" className="nav-link text-white"><b>CONTÁCTANOS</b></Link></li>
+                        <li className="nav-link"><Link to="/reservaLinea" className="nav-link text-white"><b>RESERVAS</b></Link></li>
                     </ul>
                     </div>
                     <div>
@@ -33,7 +39,9 @@ const Footer = () => {
                     </p>
                     </div>
                 </div>
-               
+               {/* <div class="container">
+                    <Maps/>
+                 </div> */}
 
             </div> 
         </div>
