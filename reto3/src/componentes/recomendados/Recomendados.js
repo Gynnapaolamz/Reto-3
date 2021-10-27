@@ -1,5 +1,4 @@
 import React,{Component,} from 'react'
-import Carrousel from "../../componentes/Carrousel"
 import Menu from "../../media/img3.png";
 import Menu2 from "../../media/img4.png";
 import Menu3 from "../../media/img5.png";
@@ -21,30 +20,30 @@ const Recomendados = () =>{
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-md-8">
+                  <div className="col-md-6">
                     <div className="row">
-                      <div className="col-md-5">
-                        <Carrousel image={Menu}/>
+                      <div className="col-md-3">
+                        <img className="img" src={Menu}/>
                       </div>
-                      <div className="col-md-5">
-                        <Carrousel image={Menu2}/>
+                      <div className="col-md-3">
+                        <img className="img" src={Menu2}/>
                       </div>
                     </div>
                     <div className="row">
-                      <div className="col-md-5">
-                        <img src={Menu3}/>
+                      <div className="col-md-3">
+                        <img className="img" src={Menu3}/>
                       </div>
-                      <div className="col-md-5">
-                        <img src={Menu4}/> 
+                      <div className="col-md-3">
+                        <img className="img" src={Menu4}/> 
                       </div>
                     </div>
                   </div>
                   <div className="col-md-3">
                     <div className="row">
-                      <img src={Menup}/>
+                      <img className="imgm" src={Menup}/>
                     </div>
                     <div className="row">
-                      <button onclick="window.location.href='./menu.html'" className="btn btn-primary">Consulta el menú</button>
+                      <button onclick="window.location.href='../componentes/Menu/ContainerMenu.js'" className="btn btn-primary">Consulta el menú</button>
                     </div>
                   </div>        
                 </div>

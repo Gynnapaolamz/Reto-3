@@ -1,12 +1,10 @@
 import React,{Component,} from 'react'
-import Menus from "../../componentes/Carrousel"
 import Logo from "../../media/icono1@2x.png";
 import Logo2 from "../../media/icono2@2x.png";
 import Logo3 from "../../media/icono3@2x.png";
 import Logo4 from "../../media/icono4@2x.png";
 import Boton from "../../media/boton.png";
-import foto32 from "../../media/foto3@2x.png";
-import "../../css/Inicio.css"
+import foto3 from "../../media/foto3@2x.png";
 import "../../css/bootstrap.min.css";
 import "./eventos.css";
 import {BrowserRouter as Router, 
@@ -19,49 +17,87 @@ const Eventos = () => {
     
         return (
             <>
-            <div className="container-2 even-style-imagen" /*style ="background-image: url('./images/foto3@2x.png'); max-width: auto; height:auto"*/ >
-              <div className="container even-style-imagen2" /*style="padding-block-start: 20px; padding-block-end: 20px;" id="eventos"*/id="eventos" >
-                <div className="row">
-                  <div className="col-md-6">
-                    <h1><strong>Organizamos tu evento</strong></h1>
+            <div className="container">
+              
+            <div className="titulo even-style-imagen2" id="eventos" >
+                 <h1> <strong>Organizamos tu evento</strong></h1>
+              </div>
+              
+              <div className="container-card">
+              <div className="card" >
+  <img src={Logo} className="card-img-top" alt="Logo1"/>
+  <div className="card-body">
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <Link to ="/servicios"><img className="boton" src={Boton}/></Link>
+  </div>
+</div>
+
+<div className="card" >
+  <img src={Logo2} className="card-img-top" alt="Logo2"/>
+  <div className="card-body">
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <Link to ="/servicios"><img className="boton" src={Boton}/></Link>
+  </div>
+</div>
+<div className="card" >
+  <img src={Logo3} className="card-img-top" alt="Logo3"/>
+  <div className="card-body">
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <Link to ="/servicios"><img className="boton" src={Boton}/></Link>
+  </div>
+</div>
+<div className="card" >
+  <img src={Logo4} className="card-img-top" alt="Logo4"/>
+  <div class="card-body">
+    <Link to ="/servicios"><img className="boton" src={Boton}/></Link>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+</div>
+            <div className="container-2 even-style-imagen">
+              <div className="container even-style-imagen2" id="eventos" >
+                
+                    <h1 className="titulo"> <strong>Organizamos tu evento</strong></h1>
                   </div>
                 </div>
+                
+
                 <div className="row">
                   <div className="col-md-3">
-                    <Menus image={Logo}/>
+                    <img className="img-evento" src={Logo}/>
                   </div>
                   <div className="col-md-3">
-                    <Menus image={Logo2}/>
+                    <img className="img-evento" src={Logo2}/>
                   </div>
                   <div className="col-md-3">
-                    <Menus image={Logo3}/>
+                    <img className="img-evento" src={Logo3}/>
                   </div>
                   <div className="col-md-3">
-                    <Menus image={Logo4}/>
+                    <img className="img-evento" src={Logo4}/>
                   </div>
                 </div>  
                 <div className="row">
                   <div className="col-md-3">
-                    <h5>Fiestas Tematicas</h5>
-                    <p>
+                    <h5 className="h5">Fiestas Tematicas</h5>
+                    <p className="evento-text">
                       Contamos con las instalaciones para organizar tus eventos especiales, con la tematica e idea que desees.
                     </p>
                   </div>
                   <div className="col-md-3">
-                    <h5>Matrimonios</h5>
-                    <p>
+                    <h5 className="h5">Matrimonios</h5>
+                    <p className="evento-text">
                       Dejanos ser parte de este momento tan especial, organizando cada uno de los detalles para que sea el dia que soñaste siempre.
                     </p>
                   </div>
                   <div className="col-md-3">
-                    <h5>Cenas empresariales</h5>
-                    <p>
+                    <h5 className="h5">Cenas empresariales</h5>
+                    <p className="evento-text">
                       Aqui puedes organizar tus eventos empresariales, comerciales y personales que requieras, con la mejor carta e instalaciones de la ciudad.
                     </p>
                   </div>
                   <div className="col-md-3">
-                    <h5>Cumpleaños</h5>
-                    <p>
+                    <h5 className="h5">Cumpleaños</h5>
+                    <p className="evento-text">
                       Sabemos que es un día importante, puedes disfrutar de una cena especial y luego complementarla con unas copas en compañia de tus seres queridos.
                     </p>
                   </div>
@@ -69,20 +105,20 @@ const Eventos = () => {
                 </div>
                 <div className="row">
                   <div className="col-md-3">
-                    <Link to ="/servicios"><Menus image={Boton}/></Link>
+                    <Link to ="/servicios"><img className="boton"src={Boton}/></Link>
                   </div>
                   <div className="col-md-3">
-                    <Link to ="/servicios"><Menus image={Boton}/></Link>
+                    <Link to ="/servicios"><img className="boton" src={Boton}/></Link>
                   </div>
                   <div className="col-md-3">
-                    <Link to ="/servicios"><Menus image={Boton}/></Link>
+                    <Link to ="/servicios"><img className="boton" src={Boton}/></Link>
                   </div>
                   <div className="col-md-3">
-                    <Link to ="/servicios"><Menus image={Boton}/></Link>
+                    <Link to ="/servicios"><img className="boton" src={Boton}/></Link>
                   </div>
                 </div> 
               </div>
-            </div> 
+          
             </> 
         )
       }
