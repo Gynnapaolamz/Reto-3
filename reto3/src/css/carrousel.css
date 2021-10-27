@@ -1,9 +1,9 @@
-.carouselg {
+.container {
     width: 100%;
     padding: 20px;
 }
 
-.carousel-inner {
-    width: min-content;
+.carousel {
+    width: 70%;
 }
 

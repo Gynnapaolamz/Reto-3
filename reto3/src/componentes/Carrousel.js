@@ -5,13 +5,14 @@ import Imagen2 from "../../src/media/img2.png";
 import Imagen3 from "../../src/media/img3.png";
 import Imagen4 from "../../src/media/img4.png";
 import Imagen5 from "../../src/media/img5.png";
+import "../css/carousel.css"
 
 const Carrousel = () => {
  
     return (
       <>
 
-      <div className="carouselg">
+      <div className="container">
 
         <div id="carouselExampleInterval" className="carousel slide" data-ride="carousel">
   <div className="carousel-inner">

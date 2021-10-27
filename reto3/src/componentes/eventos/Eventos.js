@@ -27,7 +27,9 @@ const Eventos = () => {
               <div className="card" >
   <img src={Logo} className="card-img-top" alt="Logo1"/>
   <div className="card-body">
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h2>Fiestas Tematicas</h2>
+    <p className="card-text">
+      Contamos con las instalaciones para organizar tus eventos especiales, con la tematica e idea que desees.</p>
     <Link to ="/servicios"><img className="boton" src={Boton}/></Link>
   </div>
 </div>
@@ -35,22 +37,25 @@ const Eventos = () => {
 <div className="card" >
   <img src={Logo2} className="card-img-top" alt="Logo2"/>
   <div className="card-body">
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <h2>Matrimonios</h2>
+    <p className="card-text">Dejanos ser parte de este momento tan especial, organizando cada uno de los detalles para que sea el dia que soñaste siempre.</p>
     <Link to ="/servicios"><img className="boton" src={Boton}/></Link>
   </div>
 </div>
 <div className="card" >
   <img src={Logo3} className="card-img-top" alt="Logo3"/>
   <div className="card-body">
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h2>Cenas Empresariales</h2>
+    <p className="card-text">Aqui puedes organizar tus eventos empresariales, comerciales y personales que requieras, con la mejor carta e instalaciones de la ciudad.</p>
     <Link to ="/servicios"><img className="boton" src={Boton}/></Link>
   </div>
 </div>
 <div className="card" >
   <img src={Logo4} className="card-img-top" alt="Logo4"/>
   <div class="card-body">
+  <h2>Cumpleaños</h2>
+    <p className="card-text">Sabemos que es un día importante, puedes disfrutar de una cena especial y luego complementarla con unas copas en compañia de tus seres queridos.</p>
     <Link to ="/servicios"><img className="boton" src={Boton}/></Link>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
 </div>
 </div>
@@ -120,7 +125,7 @@ const Eventos = () => {
               </div>
           
             </> 
-        )
+        );
       }
 
 export default Eventos;
