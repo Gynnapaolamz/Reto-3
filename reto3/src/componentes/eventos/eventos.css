@@ -1,3 +1,7 @@
+.container-c {
+    width: 100%;
+    max-width: auto;
+}
 .container-card { 
     display: grid;
     grid-template-columns: 250px 250px 250px 250px;
@@ -25,4 +29,10 @@
     background: white;
     color: #626e60;
     margin: 5px;
+}
+
+.titulo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color: #626e60;
 }

@@ -12,7 +12,7 @@ const Carrousel = () => {
     return (
       <>
 
-      <div className="container">
+      <div className="container-c">
 
         <div id="carouselExampleInterval" className="carousel slide" data-ride="carousel">
   <div className="carousel-inner">
