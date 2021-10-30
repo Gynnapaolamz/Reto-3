@@ -1,6 +1,7 @@
 .gridHeader{
     display: grid;
     grid-template-columns: 50% 50%;
+   
 }
 
 .logoColum{
@@ -15,4 +16,18 @@
 .grid2{
     display: grid;
     grid-template-columns: 30% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+.navbar {
+    background: #945d60;
+      
+}
+.navbar-brand {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffff; 
 }

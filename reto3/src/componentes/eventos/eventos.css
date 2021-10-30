@@ -1,6 +1,7 @@
-.container-c {
+.container {
     width: 100%;
     max-width: auto;
+    text-align: center;
 }
 .container-card { 
     display: grid;
@@ -11,7 +12,7 @@
 }
 
 .card {
-    background: #AF473C;
+    background: #626e60;
     align-items: center;
     padding: 10px;
 }
@@ -27,12 +28,13 @@
     width: 95%;
     height: min-content;
     background: white;
-    color: #626e60;
+    color: #4e5e4b;
     margin: 5px;
 }
 
 .titulo {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 40px;
-    color: #626e60;
+    font-size: 60px;
+    color: #af473c;
+    margin-top: 20px;
 }
