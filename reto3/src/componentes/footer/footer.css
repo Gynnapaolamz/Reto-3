@@ -12,3 +12,7 @@
     display: grid;
     grid-template-rows: 15% 80%;
 }
+
+.bg {
+    background: #945d60;
+}

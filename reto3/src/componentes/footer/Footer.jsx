@@ -3,6 +3,7 @@ import "./footer.css";
 import logo from "../../media/logo@2x.png";
 import "../../css/bootstrap.min.css";
 import "../../headers.css";
+import Mapa from "../../componentes/Mapa/Mapa"
 import {BrowserRouter as Router, 
     Route, 
     Switch, 
@@ -17,7 +18,7 @@ import {BrowserRouter as Router,
 const Footer = () => {
     return (
         <div>
-            <div className="bg-dark grid">
+            <div className="bg grid">
                 <div className="container foto">
                    
                     <img src={logo} className="bi me-2" width="205" height="172"/>
@@ -25,7 +26,7 @@ const Footer = () => {
                 <div className="container gridLetras">
                     <div>
                     <ul className="nav nav-pills">
-                        <li className="nav-link"><Link to="/mapaSitio" className="nav-link text-white"><b>MAPA DEL SITIO</b></Link></li>
+                        <li className="nav-link"><Link to="/mapa" className="nav-link text-white"><b>MAPA DEL SITIO</b></Link></li>
                         <li className="nav-link"><Link to="/contacto" className="nav-link text-white"><b>CONTÁCTANOS</b></Link></li>
                         <li className="nav-link"><Link to="/reservaLinea" className="nav-link text-white"><b>RESERVAS</b></Link></li>
                         
