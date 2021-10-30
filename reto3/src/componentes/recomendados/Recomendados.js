@@ -4,7 +4,7 @@ import Menu2 from "../../media/img4.png";
 import Menu3 from "../../media/img5.png";
 import Menu4 from "../../media/img6.png";
 import Menup from "../../media/menu@2x.png";
-import Logomenu from "../../media/logomenu.png"
+import Logomenu from "../../media/Logomenu.png"
 import "../../css/bootstrap.min.css";
 import "./Recomendados.css";
 import {BrowserRouter as Router, 

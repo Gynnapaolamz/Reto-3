@@ -1,15 +1,53 @@
-import React from 'react';
+import React,{Component} from 'react'
 import "./Encabezado.css";
 import logo from "../../media/logo@2x.png";
 import cart from "../../media/cart.png";
 import "../../css/bootstrap.min.css";
+import ReactModal from 'react-modal';
 import {BrowserRouter as Router, 
     Route, 
     Switch, 
     Link} from "react-router-dom";
 
-const Encabezado = () => {
+    const spanStyles = {
+
+        height: '100px'
+      
+      };
+      const customStyles = {
+        content: {
+          top: '50%',
+          left: '50%',
+          right: 'auto',
+          bottom: '10px',
+          marginRight: '-50%',
+          transform: 'translate(-50%, -50%)',
+        },
+      };
+
+class Encabezado extends Component{
+
+    constructor () {
+        super();
+        this.state = {
+          showModal: false
+        };
+        
+        this.handleOpenModal = this.handleOpenModal.bind(this);
+        this.handleCloseModal = this.handleCloseModal.bind(this);
+      }
+      
+      handleOpenModal () {
+        this.setState({ showModal: true });
+      }
+      
+      handleCloseModal () {
+        this.setState({ showModal: false });
+      }
+
+render(props){
     return (
+        <>
         <div className="container-fluid">
             <nav className="navbar navbar-expand-lg   gridHeader">
                 <div className="logoColum">
@@ -21,7 +59,8 @@ const Encabezado = () => {
                     <Link className="navbar-brand" to="/menu">Menú</Link>
                     <Link className="navbar-brand" to="/servicios">Servicios</Link>
                     <Link className="navbar-brand" to="/contacto">Contactanos</Link>
-                    <Link className="navbar-brand" to="/reservaLinea">Reservar en Línea</Link>
+                    
+                    <button className="navbar-brand disabled" onClick={this.handleOpenModal} type="button">Prueba </button> 
                     <Link className="navbar-brand disabled" to="/cart" tabindex="-1" aria-disabled="true">
                         <img src={cart}  width="40" height="40"/>
                         </Link>
@@ -31,7 +70,69 @@ const Encabezado = () => {
             </div>
         </nav>
         </div>
+      
+                <div>
+                <ReactModal 
+                 isOpen={this.state.showModal}
+                 style={customStyles}>
+       <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Reserva en linea</h5>
+              <button type="button" class="btn-close"  onClick={this.handleCloseModal}></button>
+            </div>
+            <form id="formulario">
+            <div class="modal-body">
+              <div class="form-floating mb-3">
+                <select class="form-select" id="floatingServicio" aria-label="Floating label select example">
+                  <option selected="">Celebraciones de cumpleaños</option>
+                  <option value="Aniversarios">Aniversarios</option>
+                  <option value="Fiestas infantiles">Fiestas infantiles </option>
+                  <option value="Declaraciones o apuestas">Declaraciones o apuestas</option>
+                  <option value="Despedidas">Despedidas</option>
+                  <option value="Cena de amigos">Cena de amigos</option>
+      
+                </select>
+                <label for="floatingServicio">Servicio</label>
+            </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingNombre" placeholder="Nombre completo" required/>
+                    <label for="floatingNombre" class="form-label">Nombre completo</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required/>
+                    <label for="floatingEmail">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="tel" id="floatingPhone" class="form-control"  placeholder="3108102962" pattern="[0-9]{10}" required/>
+                    <label for="floatingPhone">Telefono</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" id="floatingPersonas" class="form-control" min="1" placeholder="1" required/>
+                    <label for="floatingPersonas">Numero de personas</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="datetime-local" id="floatingReserva" class="form-control" required/>
+                    <label for="floatingReserva">Fecha/Hora</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Escriba su solicitud" id="floatingSolicitud" style={spanStyles}></textarea>
+                    <label for="floatingSolicitud">Solicitud adicional</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" onClick={this.handleCloseModal}>Cerrar</button>
+              <button type="submit" class="btn btn-primary reserva">Enviar reserva</button>
+            </div>
+        </form>
+          </div>
+        </div>
+      
+              </ReactModal>
+                </div>
+                </>
     )
+}
 }
 
 export default Encabezado

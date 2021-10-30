@@ -7,7 +7,6 @@ import declaracion from "../media/declaracion.jpeg";
 import despedida from "../media/despedidas.jpeg";
 import cena from "../media/cena.jpeg";
 
-
 import "../css/bootstrap.min.css";
 import "../css/imagen.css";
 

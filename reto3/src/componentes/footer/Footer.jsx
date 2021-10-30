@@ -28,6 +28,7 @@ const Footer = () => {
                         <li className="nav-link"><Link to="/mapaSitio" className="nav-link text-white"><b>MAPA DEL SITIO</b></Link></li>
                         <li className="nav-link"><Link to="/contacto" className="nav-link text-white"><b>CONTÁCTANOS</b></Link></li>
                         <li className="nav-link"><Link to="/reservaLinea" className="nav-link text-white"><b>RESERVAS</b></Link></li>
+                        
                     </ul>
                     </div>
                     <div>

@@ -19,29 +19,6 @@ class ContainerMenu extends Component {
             <div className="col d-flex justify-content-center mb-4">
             <Plato imagen={cumple} platoName = "Prueba" platoDescripcion = "Pruebaasss"  precio = "30000"/>
             </div>
-            <div className="col d-flex justify-content-center mb-4">
-            <Plato imagen={cumple} platoName = "Prueba" platoDescripcion = "Pruebaasss"  precio = "30000"/>
-            </div>
-            <div className="col d-flex justify-content-center mb-4">
-            <Plato imagen={cumple} platoName = "Prueba" platoDescripcion = "Pruebaasss"  precio = "30000"/>
-            </div>
-            <div className="col d-flex justify-content-center mb-4">
-            <Plato imagen={cumple} platoName = "Prueba" platoDescripcion = "Pruebaasss"  precio = "30000"/>
-            </div>
-            </div>
-            <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
-            <div className="col d-flex justify-content-center mb-4">
-            <Plato imagen={cumple} platoName = "Prueba" platoDescripcion = "Pruebaasss"  precio = "30000"/>
-            </div>
-            <div className="col d-flex justify-content-center mb-4">
-            <Plato imagen={cumple} platoName = "Prueba" platoDescripcion = "Pruebaasss"  precio = "30000"/>
-            </div>
-            <div className="col d-flex justify-content-center mb-4">
-            <Plato imagen={cumple} platoName = "Prueba" platoDescripcion = "Pruebaasss"  precio = "30000"/>
-            </div>
-            <div className="col d-flex justify-content-center mb-4">
-            <Plato imagen={cumple} platoName = "Prueba" platoDescripcion = "Pruebaasss"  precio = "30000"/>
-            </div>
             </div>
             </div>
                     </>

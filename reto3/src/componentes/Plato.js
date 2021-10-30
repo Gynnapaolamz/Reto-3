@@ -13,7 +13,7 @@ render(props){
     return (
         <>
         <div className="card shadow mb-1 rounded" style={spanStyles}>
-            <img src={this.props.imagen}  alt="card-grid-image"/>
+            <img src={this.props.imagen}  className="card-img-top imgSizeMenu" alt="card-grid-image"/>
             <div className="card-body">
               <h5 className="card-title">{this.props.platoName}</h5>
               <p className="card-text">{this.props.platoDescripcion}
