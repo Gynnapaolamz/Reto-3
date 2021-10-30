@@ -17,7 +17,7 @@ import {BrowserRouter as Router,
 const Footer = () => {
     return (
         <div>
-            <div className="bg-dark grid">
+            <div className="bg grid">
                 <div className="container foto">
                    
                     <img src={logo} className="bi me-2" width="205" height="172"/>
