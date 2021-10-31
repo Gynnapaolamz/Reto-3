@@ -6,3 +6,7 @@
 .alineacion{
     align-items: center;
 }
+
+.containerComments{
+    margin: 30px;
+}

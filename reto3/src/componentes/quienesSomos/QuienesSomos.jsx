@@ -5,6 +5,8 @@ import Testimonials from '../../componentes/carrusel/Testimonials';
 import Footer from '../../componentes/footer/Footer';
 import Historia from '../../componentes/historia/Historia';
 import Empleados from '../../componentes/empleados/Empleados';
+import Comentarios from '../../componentes/comentarios/Comentarios';
+import "../../css/bootstrap.min.css";
 
 const QuienesSomos = () => {   
     
@@ -16,6 +18,12 @@ const QuienesSomos = () => {
                 <br></br>
                 <Empleados/>
                 <Testimonials/>
+                <div className="containerComments">
+                <Comentarios
+                    commentsUrl="http://localhost:3000/nosotros"
+                    currentUserId="1"
+                />
+                </div>
                 <Footer/>
             </Fragment>
         )

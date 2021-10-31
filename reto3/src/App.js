@@ -13,7 +13,9 @@ import Mapa from './componentes/Mapa/Mapa';
 import Eventos from './componentes/eventos/Eventos';
 import Recomendados from './componentes/recomendados/Recomendados';
 import Carrousel from './componentes/Carrousel';
-
+import Comentarios from './componentes/comentarios/Comentarios';
+import InicioSesion from './componentes/login/InicioSesion';
+import LoginFirebase from './componentes/login/LoginFirebase';
 
 function App() {
   return (
@@ -25,7 +27,8 @@ function App() {
     <Route exact path="/carrito"  component={Carrito}/>
     <Route exact path="/menu" component={Menu}/>
     <Route exact path="/" component={Inicio}/>
-    <Route exact path="/mapa" component={Mapa}/>
+    <Route exact path="/mapaSitio" component={Mapa}/>
+  {/*  <Route exact path="/login" component={InicioSesion}/> */}
     <Route exact path="/"></Route>
     </Switch>
   </Router> 
