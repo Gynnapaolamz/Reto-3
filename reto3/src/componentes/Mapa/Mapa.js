@@ -3,19 +3,15 @@ import Encabezado from '../../componentes/encabezado/Encabezado';
 import Footer from '../../componentes/footer/Footer';
 import "../../componentes/Mapa/mapa.css"
 import "../../css/bootstrap.min.css";
-<<<<<<< Updated upstream
+
 import {BrowserRouter as Router, 
   Route, 
   Switch, 
   Link} from "react-router-dom";
-=======
-import {Link} from "react-router-dom";
->>>>>>> Stashed changes
 
-
-class Mapa extends Component {
+const Mapa = () =>{
     
-    render(){
+
 
         return (
             <Fragment>
@@ -25,19 +21,19 @@ class Mapa extends Component {
         <h1>Mapa del sitio</h1>
       
         <ul className="nav nav-pills">
-<<<<<<< Updated upstream
+
           <li role="presentation"><Link className="navbar-brand2" to="/">Inicio</Link></li>
           <li role="presentation"><Link className="navbar-brand2" to="/nosotros">Quienes Somos</Link></li>
           <li role="presentation"><Link className="navbar-brand2" to="/menu">Menu</Link></li>
           <li role="presentation"><Link className="navbar-brand2" to="/servicios">Servicios</Link></li>
           <li role="presentation"><Link className="navbar-brand2" to="/contacto">Contactanos</Link></li>
-=======
+
           <li role="presentation"><Link to="/inicio">Inicio</Link></li>
           <li role="presentation"><Link to="/nosotros">Quienes somos</Link></li>
           <li role="presentation"><Link to="/menu">Menu</Link></li>
           <li role="presentation"><Link to="/servicios">Servicios</Link></li>
           <li role="presentation"><Link to="/contacto">Contactanos</Link></li>
->>>>>>> Stashed changes
+
         </ul>
       
         <section id="sec1">
@@ -116,9 +112,9 @@ class Mapa extends Component {
          </>
     <Footer/> 
    </Fragment>  
-);
+)
 }
 
-}
+
 
 export default Mapa;

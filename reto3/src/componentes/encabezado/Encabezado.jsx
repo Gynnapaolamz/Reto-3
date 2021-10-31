@@ -75,7 +75,7 @@ render(props){
                     <Link className="navbar-brand" to="/servicios">Servicios</Link>
                     <Link className="navbar-brand" to="/contacto">Contactanos</Link>
                     
-                    <button className="navbar-brand disabled" onClick={this.handleOpenModal} type="button">Reserva en linea </button> 
+                    <button className="btn btn-outline-link"onClick={this.handleOpenModal} type="button">Reserva en linea </button> 
                     <Link className="navbar-brand disabled" to="/carrito" tabindex="-1" aria-disabled="true">
                         <img src={cart}  width="40" height="40"/>
                         </Link>
@@ -83,18 +83,7 @@ render(props){
                             <span className="navbar-toggler-icon"></span>
                     </button> 
 
-                    <div className="collapse navbar-collapse accColum" id="navbarNavAltMarkup">
-                        <div className="navbar-nav">
-                            <Link className="nav-link active" aria-current="page" to="/nosotros">Quienes somos</Link>
-                            <Link className="nav-link" to="/menu">Menú</Link>
-                            <Link className="nav-link" to="/servicios">Servicios</Link>
-                            <Link className="nav-link" to="/contacto">Contactanos</Link>
-                            <Link className="nav-link" to="/reservaLinea">Reserva en línea</Link>
-                            <Link className="nav-link disabled" to="/cart" tabindex="-1" aria-disabled="true">
-                                <img src={cart}  width="18" height="18"/></Link>
-                          
-                        </div>
-                    </div>
+                   
 
             </div>
         </nav>
