@@ -1,14 +1,27 @@
 import React from "react";
 import Servicio from "./Servicio";
-import cumple from "../media/Cumple.jpeg";
-import aniversario from "../media/aniversario.jpeg";
-import fiesta from "../media/fiesta_infantil.jpeg";
-import declaracion from "../media/declaracion.jpeg";
-import despedida from "../media/despedidas.jpeg";
-import cena from "../media/cena.jpeg";
-
+import { servicios } from "../services/servicios";
 import "../css/bootstrap.min.css";
 import "../css/imagen.css";
+
+const ListServices = () => {
+    return (
+      <>
+        {servicios.map((data, id) => {
+          return (
+            <div className="col">
+                <div id={id} key={id}>
+                <Servicio
+                     servicio={data.servicio}
+                     imagen={data.imagen}
+                     />
+                </div>
+            </div>
+          );
+        })}
+      </>
+    );
+  };
 
 class ContainerServicios extends React.Component {
 
@@ -17,7 +30,6 @@ class ContainerServicios extends React.Component {
         return (
             
             <>
-             
                <div className="container-fluid">
                <div className="row justify-content-md-center">
                     <div className="col-md-auto">
@@ -36,34 +48,10 @@ class ContainerServicios extends React.Component {
         </div>
       </div>
             <div className="row row-cols-1 row-cols-sm-2 g-3" id="servicio">
-                
-                <div className="col">
-                <Servicio imagen={cumple} servicio ="Celebraciones de cumpleaños">
-                </Servicio>
-                </div>
-                <div className="col">
-                <Servicio imagen={aniversario} servicio ="Aniversarios">
-                </Servicio>
-                </div>
-                <div className="col">
-                <Servicio imagen={fiesta} servicio ="Fiestas infantiles">
-                </Servicio>
-                </div>
-                <div className="col">
-                <Servicio imagen={declaracion} servicio ="Declaraciones o apuestas">
-                </Servicio>
-                </div>
-                <div className="col">
-                <Servicio imagen={despedida} servicio ="Despedidas">
-                </Servicio>
-                </div>
-                <div className="col">
-                <Servicio imagen={cena} servicio ="Cena de amigos">
-                </Servicio>
-                </div>
+             <ListServices/>
             </div>
             </div>
-            
+            <br></br>
             </>
 
         );

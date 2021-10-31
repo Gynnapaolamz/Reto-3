@@ -4,6 +4,7 @@ import logo from "../../media/logo@2x.png";
 import cart from "../../media/cart.png";
 import "../../css/bootstrap.min.css";
 import ReactModal from 'react-modal';
+import emailjs from 'emailjs-com';
 import {BrowserRouter as Router, 
     Route, 
     Switch, 
@@ -35,8 +36,22 @@ class Encabezado extends Component{
         
         this.handleOpenModal = this.handleOpenModal.bind(this);
         this.handleCloseModal = this.handleCloseModal.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
       }
-      
+      handleSubmit(e) {
+        e.preventDefault();
+        emailjs.sendForm('service_jemyoc1', 'template_wwx52mv', e.target, 'user_yAOlieKwjwT6J3Npcb3ck')
+          .then((result) => {
+              //console.log(result.text);
+              alert("Enviado");
+          }, (error) => {
+              console.log(error.text);
+            alert("Hubo un error");
+          });
+          //e.target.reset();
+          this.setState({ showModal: false });
+        
+      }
       handleOpenModal () {
         this.setState({ showModal: true });
       }
@@ -60,8 +75,8 @@ render(props){
                     <Link className="navbar-brand" to="/servicios">Servicios</Link>
                     <Link className="navbar-brand" to="/contacto">Contactanos</Link>
                     
-                    <button className="navbar-brand disabled" onClick={this.handleOpenModal} type="button">Prueba </button> 
-                    <Link className="navbar-brand disabled" to="/cart" tabindex="-1" aria-disabled="true">
+                    <button className="navbar-brand disabled" onClick={this.handleOpenModal} type="button">Reserva en linea </button> 
+                    <Link className="navbar-brand disabled" to="/carrito" tabindex="-1" aria-disabled="true">
                         <img src={cart}  width="40" height="40"/>
                         </Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,65 +86,65 @@ render(props){
         </nav>
         </div>
       
-                <div>
-                <ReactModal 
-                 isOpen={this.state.showModal}
-                 style={customStyles}>
-       <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Reserva en linea</h5>
-              <button type="button" class="btn-close"  onClick={this.handleCloseModal}></button>
-            </div>
-            <form id="formulario">
-            <div class="modal-body">
-              <div class="form-floating mb-3">
-                <select class="form-select" id="floatingServicio" aria-label="Floating label select example">
-                  <option selected="">Celebraciones de cumpleaños</option>
-                  <option value="Aniversarios">Aniversarios</option>
-                  <option value="Fiestas infantiles">Fiestas infantiles </option>
-                  <option value="Declaraciones o apuestas">Declaraciones o apuestas</option>
-                  <option value="Despedidas">Despedidas</option>
-                  <option value="Cena de amigos">Cena de amigos</option>
-      
-                </select>
-                <label for="floatingServicio">Servicio</label>
-            </div>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingNombre" placeholder="Nombre completo" required/>
-                    <label for="floatingNombre" class="form-label">Nombre completo</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required/>
-                    <label for="floatingEmail">Email</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="tel" id="floatingPhone" class="form-control"  placeholder="3108102962" pattern="[0-9]{10}" required/>
-                    <label for="floatingPhone">Telefono</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="number" id="floatingPersonas" class="form-control" min="1" placeholder="1" required/>
-                    <label for="floatingPersonas">Numero de personas</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="datetime-local" id="floatingReserva" class="form-control" required/>
-                    <label for="floatingReserva">Fecha/Hora</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Escriba su solicitud" id="floatingSolicitud" style={spanStyles}></textarea>
-                    <label for="floatingSolicitud">Solicitud adicional</label>
-                </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" onClick={this.handleCloseModal}>Cerrar</button>
-              <button type="submit" class="btn btn-primary reserva">Enviar reserva</button>
-            </div>
-        </form>
+        <div>
+          <ReactModal 
+           isOpen={this.state.showModal}
+           style={customStyles}>
+ <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reserva en linea</h5>
+        <button type="button" class="btn-close"  onClick={this.handleCloseModal}></button>
+      </div>
+      <form onSubmit={this.handleSubmit}>
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+          <select class="form-select" name = "servicio" id="floatingServicio" aria-label="Floating label select example">
+            <option selected="">Celebraciones de cumpleaños</option>
+            <option value="Aniversarios">Aniversarios</option>
+            <option value="Fiestas infantiles">Fiestas infantiles </option>
+            <option value="Declaraciones o apuestas">Declaraciones o apuestas</option>
+            <option value="Despedidas">Despedidas</option>
+            <option value="Cena de amigos">Cena de amigos</option>
+
+          </select>
+          <label for="floatingServicio">Servicio</label>
+      </div>
+          <div class="form-floating mb-3">
+              <input type="text" name ="name" class="form-control" id="floatingNombre" placeholder="Nombre completo" required/>
+              <label for="floatingNombre" class="form-label">Nombre completo</label>
           </div>
-        </div>
-      
-              </ReactModal>
-                </div>
+          <div class="form-floating mb-3">
+              <input type="email" name="mail" class="form-control" id="floatingEmail" placeholder="name@example.com" required/>
+              <label for="floatingEmail">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+              <input type="tel" name ="telefono" id="floatingPhone" class="form-control"  placeholder="3108102962" pattern="[0-9]{10}" required/>
+              <label for="floatingPhone">Telefono</label>
+          </div>
+          <div class="form-floating mb-3">
+              <input type="number" name ="personas" id="floatingPersonas" class="form-control" min="1" placeholder="1" required/>
+              <label for="floatingPersonas">Numero de personas</label>
+          </div>
+          <div class="form-floating mb-3">
+              <input type="datetime-local" name ="fecha" id="floatingReserva" class="form-control" required/>
+              <label for="floatingReserva">Fecha/Hora</label>
+          </div>
+          <div class="form-floating mb-3">
+              <textarea class="form-control" name ="solicitud" placeholder="Escriba su solicitud" id="floatingSolicitud" style={spanStyles}></textarea>
+              <label for="floatingSolicitud">Solicitud adicional</label>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onClick={this.handleCloseModal}>Cerrar</button>
+        <button type="submit" class="btn btn-primary">Enviar reserva</button>
+      </div>
+  </form>
+    </div>
+  </div>
+
+        </ReactModal>
+          </div>
                 </>
     )
 }

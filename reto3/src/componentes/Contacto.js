@@ -1,12 +1,31 @@
 import React,{Component} from 'react'
 import "../css/bootstrap.min.css";
+import emailjs from 'emailjs-com';
 const spanStyles = {
 
     textAling: 'center'
 
   };
 class Contacto extends Component{
+  constructor () {
+    super();
+    this.handleSubmit = this.handleSubmit.bind(this);
     
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    emailjs.sendForm('service_z3mvavw', 'template_9rlegbh', e.target, 'user_8gD0NWMNvf0w9PiUJ1Mlf')
+      .then((result) => {
+          alert("Enviado");
+          window.location.href = window.location.href;
+      }, (error) => {
+          console.log(error.text);
+        alert("Hubo un error");
+      });    
+  }
+ 
+
 render(){
 
     return (
@@ -26,7 +45,7 @@ render(){
             Suspendisse blandit ullamcorper pretium. Pellentesque finibus dui ut dui condimentum auctor. In ut iaculis ligula. Nunc sollicitudin enim at diam sodales dapibus. Nam fringilla odio sit amet mi porta, blandit porta elit suscipit. 
         </div>
           <div className="col-md-6">
-            <form id="formPri">
+            <form onSubmit={this.handleSubmit}>
                 <div className="mb-3">
                     <select required name="evento" className="form-select" placeholder = "Hola">
                         <option>Seleccione el servicio</option>
@@ -40,18 +59,18 @@ render(){
                     <label></label>
                     <input required className="form-control" type="text" placeholder="Asunto" name="asunto"/>
                     <label></label>
-                    <input required className="form-control" type="text" placeholder="Nombre Completo" name="name"/>
+                    <input required className="form-control" name="name" type="text" placeholder="Nombre Completo"/>
                     <label></label>
-                    <input required type="email" name ="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo Electronico"/>
+                    <input required type="email" name ="mail" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo Electronico"/>
                     <label></label>
-                    <textarea required className="form-control" name="message" rows="5"></textarea>
+                    <textarea  className="form-control" name="  " rows="5"></textarea>
                     <label></label>
                     <div className="mb-3 form-check">
                         <input required type="checkbox" className="form-check-input" id="exampleCheck1"/>
                         <label  className="form-check-label" for="exampleCheck1">Acepto terminos y condiciones</label>
                     </div>
                     <div style={spanStyles}>
-                    <  button type="button" className="btn btn-primary">Enviar</button>
+                    <  button type="submit" className="btn btn-primary">Enviar</button>
                     </div>
                 </div>
 

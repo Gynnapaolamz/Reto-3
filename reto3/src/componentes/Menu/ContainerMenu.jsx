@@ -4,6 +4,28 @@ import cumple from "../../media/Cumple.jpeg";
 import Encabezado from '../../componentes/encabezado/Encabezado';
 import Footer from '../../componentes/footer/Footer';
 import "../../css/bootstrap.min.css";
+import { platos } from "../../services/platos";
+
+
+const ListPlatos = () => {
+    return (
+      <>
+        {platos.map((data, id) => {
+          return (
+            <div className="col d-flex justify-content-center mb-4">
+                <div id={id} key={id}>
+                <Plato
+                    imagen = {data.imagen}
+                     platoName={data.platoName}
+                     precio={data.precio}
+                     />
+                </div>
+            </div>
+          );
+        })}
+      </>
+    );
+  };
 
 
 class ContainerMenu extends Component {
@@ -16,9 +38,7 @@ class ContainerMenu extends Component {
             <br></br>
             <>  <div className="container">
             <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
-            <div className="col d-flex justify-content-center mb-4">
-            <Plato imagen={cumple} platoName = "Prueba" platoDescripcion = "Pruebaasss"  precio = "30000"/>
-            </div>
+            <ListPlatos />
             </div>
             </div>
                     </>
