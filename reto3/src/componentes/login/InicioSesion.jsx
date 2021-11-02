@@ -1,23 +1,21 @@
-import React from "react";
-import { useAuth0 } from "@auth0/auth0-react";
-import { LoginButton } from "./Login";
-import { LogoutButton } from "./Logout";
-import { Profile } from "./Profile";
+import React, { useEffect } from "react";
+import { app } from "./configFirebaseSS";
+import Home from "./Home";
+import Logueo from "./Logueo";
 
 
 const InicioSesion = () => {
-    const { isAuthenticated } = useAuth0();
+  const [usuario, setUsuario] = React.useState(null);
+  useEffect(() => {
+    app.auth().onAuthStateChanged((usuarioFirebase) => {
+      console.log("ya tienes sesión iniciada con:", usuarioFirebase);
+      setUsuario(usuarioFirebase);
+    });
+  }, []);
 
     return (
         <div>
-            {isAuthenticated ? (
-          <>
-            <Profile />
-            <LogoutButton />
-          </>
-        ) : (
-          <LoginButton />
-        )}
+            return <>{usuario ? <Home /> : <Logueo setUsuario={setUsuario} />}</>;
         </div>
     )
 }

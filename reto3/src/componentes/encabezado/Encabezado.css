@@ -27,5 +27,14 @@
 .nav-link {
     text-decoration: none;
     color: #ffff; 
-    grid-template-columns: 30% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+.botonReserva{
+  
+    display:block;
+    background-color:rgb(148,93,96);
+    color:white;
+    border: none;
+    outline:none;
 }

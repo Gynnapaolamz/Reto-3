@@ -1,20 +1,20 @@
 import React, {useState} from 'react';
-import * as firebase from 'firebase/app'
-import 'firebase/auth'
+import {app} from './configFirebaseSS';
 import { useFirebaseApp } from 'reactfire';
 
 
 
 export default  (props) => {
     
-
+    //const auth = getAuth();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const firebase = useFirebaseApp();
 
     const submit = async () => {
-        await firebase.auth().createUserWithEmailAndPassword(email, password);
+     
+        await app.auth().createUserWithEmailAndPassword(email, password);
     }
 
     return (
