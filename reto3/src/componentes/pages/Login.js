@@ -2,8 +2,6 @@ import React, {useRef, useState} from 'react';
 import {Link, useHistory} from 'react-router-dom';
 import {useAuth} from '../context/AuthContext';
 import './pages.css';
-import imags from '../../media/login.svg';
-
 
 const Login = () =>{
 
@@ -56,7 +54,9 @@ const Login = () =>{
                 <p>Ya tienes cuenta?<Link to='/signup' ><span className="span">Registrarse</span></Link></p>
             </form>
           </div>
-            <img className="image-container" src={imags} alt="" />
+            <img className="image-container" 
+                src="https://firebasestorage.googleapis.com/v0/b/juvetic-reto3.appspot.com/o/login.svg?alt=media&token=5bf39ac9-acff-46b5-86f9-d192fdd048d1" 
+                alt="imagenSocial" />
       </div>
       </div>
     )
