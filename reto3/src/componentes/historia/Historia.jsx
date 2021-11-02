@@ -1,5 +1,4 @@
 import React, {Fragment} from 'react';
-import history from "../../media/foto42x.png";
 import "../../css/bootstrap.min.css";
 
 const Historia = () => {
@@ -7,7 +6,11 @@ const Historia = () => {
         <div>
             <main className="segundoContenedor">
                 <div className="container proporcion">
-                    <img src={history} className="bi me-2" width="480" height="380"/>
+                    <img 
+                        src="https://firebasestorage.googleapis.com/v0/b/juvetic-reto3.appspot.com/o/foto42x.png?alt=media&token=40112626-dec0-4101-9736-7ea72ff45c55"
+                        className="bi me-2" 
+                        width="480" 
+                        height="380"/>
                 </div>
     
                 <div className="container texto">

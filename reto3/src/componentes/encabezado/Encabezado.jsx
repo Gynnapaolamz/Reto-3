@@ -1,17 +1,11 @@
 import React,{Component, useState} from 'react'
 import "./Encabezado.css";
-import logo from "../../media/logo@2x.png";
-import cart from "../../media/cart.png";
 import "../../css/bootstrap.min.css";
 import ReactModal from 'react-modal';
 import emailjs from 'emailjs-com';
-import { LoginButton } from "../login/Login";
-import { LogoutButton } from "../login/Logout";
-import {BrowserRouter as Router, 
-    Route, 
-    Switch, 
-    Link, useHistory} from "react-router-dom";
-import {useAuth} from '../context/AuthContext';
+import {Link} from "react-router-dom";
+import Botones from './Botones';
+
 
     const spanStyles = {
         height: '100px'
@@ -27,58 +21,18 @@ import {useAuth} from '../context/AuthContext';
         },
       };
 
-const Profile = () => {
-  const [error, setError] = useState('');
-  const {currentUser, logout} = useAuth();
-  const history = useHistory();
-
-  async function handleLogout(){
-    setError('');
-
-    try { 
-        await logout();
-        history.push('/')
-    } catch{
-        setError('Fallo al cerrar sesión')
-    }
-} 
-
-return handleLogout();
-}
 
 class Encabezado extends Component{
-    
     constructor () {
         super();
         this.state = {
           showModal: false
-        };    
-        
-        
-/*      
-        const [error, setError] = useState('');
-        const {currentUser, logout} = useAuth();
-        const history = useHistory();
-
-*/
+        };     
         this.handleOpenModal = this.handleOpenModal.bind(this);
         this.handleCloseModal = this.handleCloseModal.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-
-  /*  
-        async function handleLogout(){
-          setError('');
-  
-          try { 
-              await logout();
-              history.push('/')
-          } catch{
-              setError('Fallo al cerrar sesión')
-          }
-      } */
       }
      
-
       handleSubmit(e) {
         e.preventDefault();
         emailjs.sendForm('service_jemyoc1', 'template_wwx52mv', e.target, 'user_yAOlieKwjwT6J3Npcb3ck')
@@ -102,6 +56,7 @@ class Encabezado extends Component{
       }
 
     
+
 render(props){
     return (
         <>
@@ -109,7 +64,12 @@ render(props){
         <div className="container-fluid">
             <nav className="navbar navbar-expand-lg gridHeader">
                 <div className="logoColum">
-                    <Link to="/inicio"className="navbar-brand px-5"><img src={logo} width="100" height="80"/></Link>
+                    <Link to="/inicio"className="navbar-brand px-5">
+                      <img 
+                        src="https://firebasestorage.googleapis.com/v0/b/juvetic-reto3.appspot.com/o/logo%402x.png?alt=media&token=9c78bbe4-fb8a-4c38-ae49-7775b60e917e"
+                        width="100" 
+                        height="80"/>
+                      </Link>
                 </div>
                 <div className="container-fluid px-5">
                     <Link className="navbar-brand" to="/inicio">Inicio</Link>
@@ -120,13 +80,12 @@ render(props){
                     
                     <button className="navbar-brand disabled botonReserva" onClick={this.handleOpenModal} type="button">Reserva en linea </button> 
                     <Link className="navbar-brand disabled" to="/carrito" tabindex="-1" aria-disabled="true">
-                        <img src={cart}  width="40" height="40"/>
+                        <img 
+                          src="https://firebasestorage.googleapis.com/v0/b/juvetic-reto3.appspot.com/o/cart.png?alt=media&token=15644351-be5d-4df9-9528-c44c6d3f2765"
+                          width="40" 
+                          height="40"/>
                         </Link>
-               {/*    <button className="navbar-brand disabled botonReserva"><Link to='/update-profile'>Perfil</Link></button>
-                    <button onClick={handleLogout} className="navbar-brand disabled botonReserva">Salir</button> */}
-
-                   
-
+                    <Botones/>
             </div>
         </nav>
         </div>

@@ -38,3 +38,11 @@
     border: none;
     outline:none;
 }
+
+.botonPerfil{
+    display:block;
+    background-color:rgb(148,93,96);
+    color:white;
+    border: none;
+    outline:none;
+}

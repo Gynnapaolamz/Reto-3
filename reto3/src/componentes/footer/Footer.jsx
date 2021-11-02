@@ -1,19 +1,8 @@
 import React from 'react';
 import "./footer.css";
-import logo from "../../media/logo@2x.png";
 import "../../css/bootstrap.min.css";
 import "../../headers.css";
-import Mapa from "../../componentes/Mapa/Mapa"
-import {BrowserRouter as Router, 
-    Route, 
-    Switch, 
-    Link} from "react-router-dom";
-
-
-/*import {GoogleMap,
-        withScriptjs,
-        withGoogleMap} from 'react-google-maps';*/
-
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -21,7 +10,11 @@ const Footer = () => {
             <div className="bg grid">
                 <div className="container foto">
                    
-                    <img src={logo} className="bi me-2" width="205" height="172"/>
+                    <img 
+                        src="https://firebasestorage.googleapis.com/v0/b/juvetic-reto3.appspot.com/o/logo%402x.png?alt=media&token=9c78bbe4-fb8a-4c38-ae49-7775b60e917e"
+                        className="bi me-2" 
+                        width="205" 
+                        height="172"/>
                 </div>
                 <div className="container gridLetras">
                     <div>

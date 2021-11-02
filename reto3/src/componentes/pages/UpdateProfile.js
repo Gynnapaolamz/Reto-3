@@ -81,7 +81,7 @@ const UpdateProfile = () => {
                     />  
 
                 <button  disabled={loading} type="submit" className="btn">Actualizar</button>
-                <p><Link to='/dashboard' ><span className="span">Regresar</span></Link></p>
+                <p><Link to='/inicio' ><span className="span">Regresar</span></Link></p>
             </form>
           </div>
           <img className="image-container" 
