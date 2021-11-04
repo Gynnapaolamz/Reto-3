@@ -60,7 +60,7 @@ class Encabezado extends Component{
 render(props){
     return (
         <>
-        
+       
         <div className="container-fluid">
             <nav className="navbar navbar-expand-lg gridHeader">
                 <div className="logoColum">
@@ -78,6 +78,7 @@ render(props){
                     <Link className="navbar-brand" to="/servicios">Servicios</Link>
                     <Link className="navbar-brand" to="/contacto">Contactanos</Link>
                     
+                    
                     <button className="navbar-brand disabled botonReserva" onClick={this.handleOpenModal} type="button">Reserva en linea </button> 
                     <Link className="navbar-brand disabled" to="/carrito" tabindex="-1" aria-disabled="true">
                         <img 
@@ -85,6 +86,7 @@ render(props){
                           width="40" 
                           height="40"/>
                         </Link>
+                    <Link className="navbar-brand" to="/login"> Login </Link>
                     <Botones/>
             </div>
         </nav>
@@ -148,7 +150,8 @@ render(props){
           </div>
 
         </ReactModal>
-          </div>
+       </div> 
+
                 </>
     )
 }

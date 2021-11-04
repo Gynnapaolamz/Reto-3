@@ -3,6 +3,8 @@ import {Link, useHistory} from 'react-router-dom';
 import {useAuth} from '../context/AuthContext';
 import './pages.css';
 
+
+
 const Login = () =>{
 
     const emailRef = useRef();
@@ -28,6 +30,7 @@ const Login = () =>{
     }
 
     return (
+        
         <div className="Padre">
         <div className="login-container">
           <div className="login-info-container">
@@ -59,6 +62,8 @@ const Login = () =>{
                 alt="imagenSocial" />
       </div>
       </div>
+      
+
     )
 }
 

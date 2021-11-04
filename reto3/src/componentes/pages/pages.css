@@ -4,7 +4,7 @@
     --login-bg:#88E0EF;
     --title-bg: #161E54;
     --button-bg: #161E54;
-    --light-pink: #161E54;
+    --light-pink: #a1a1a3;
     --image-bg:  #eadbff ;
 }
 
@@ -130,7 +130,7 @@
 }
 
 .span {
-    color: var(--light-pink);
+    color: #161E54;
     font-weight: 600;
     cursor: pointer;
     

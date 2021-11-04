@@ -1,6 +1,5 @@
 import React,{Component,Fragment} from 'react'
 import Plato from "../Plato";
-import cumple from "../../media/Cumple.jpeg";
 import Encabezado from '../../componentes/encabezado/Encabezado';
 import Footer from '../../componentes/footer/Footer';
 import "../../css/bootstrap.min.css";

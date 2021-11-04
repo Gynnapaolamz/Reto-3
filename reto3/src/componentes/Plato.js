@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
 import "../css/bootstrap.min.css";
 import "../css/imagen.css";
+
 const spanStyles = {
 
     width: '14rem'
@@ -55,6 +56,7 @@ class Plato extends Component{
 
     return (
         <>
+       
         <div className="card shadow mb-1 rounded" style={spanStyles}>
             <img src={this.props.imagen}  className="card-img-top imgSizeMenu" alt="card-grid-image"/>
             <div className="card-body">
@@ -75,6 +77,8 @@ class Plato extends Component{
               </form>
             </div>
           </div>
+ 
+         
           </>
           )
 }

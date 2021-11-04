@@ -12,7 +12,7 @@ const Botones = () => {
       setError('');
       try { 
           await logout();
-          history.push('/');
+          history.push('/login');
       } catch{
           setError('Fallo al cerrar sesión');
       }

@@ -1,7 +1,7 @@
 import React from 'react'
 import "../../css/bootstrap.min.css";
 import "../../css/carousel.css";
-
+import "../../css/headers.css";
 const Testimonials = () => {
     return (
         <div>
@@ -37,7 +37,7 @@ const Testimonials = () => {
                             height="140"/>
                     </div>
                     <div className="palabrasTestimonio-2">
-                        <p><i>"Un local precioso, decorado con mucho gusto. Se nota que los dueños han puesto mucho esfuerzo e ilusión en el local. La carta es un poco corta, pero no es un detalle importante en mi opinión ya que los platos que probamos eran de una calidad excelente. Un precio muy ajustado a lo que ofrecen, al contrario que muchos otros locales donde parece que servir un plato medianamente elaborado merece pagar precios desproporcionados. altamente recomendable."</i></p>
+                        <p><i>"Un local precioso, decorado con mucho gusto. Se nota que los dueños han puesto mucho esfuerzo e ilusión en el local."</i></p>
                         <p className="nombreOpinion"><b>Daniela Manjarrez</b></p>
                 
                     </div>
@@ -67,6 +67,7 @@ const Testimonials = () => {
                 </div>
             </div>
         </div>
+        <br></br>
     </div>
     )
 }

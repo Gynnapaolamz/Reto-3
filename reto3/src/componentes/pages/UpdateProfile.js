@@ -2,7 +2,7 @@ import React, {useState, useRef} from 'react';
 import {useAuth} from '../context/AuthContext';
 import {Link, useHistory} from 'react-router-dom';
 import './pages.css';
-import imags from '../../media/login.svg';
+
 
 const UpdateProfile = () => {
 
