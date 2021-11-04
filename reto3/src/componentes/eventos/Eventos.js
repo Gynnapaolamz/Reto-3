@@ -1,9 +1,4 @@
 import React,{Component,} from 'react'
-import Logo2 from "../../media/icono2@2x.png";
-import Logo3 from "../../media/icono3@2x.png";
-import Logo4 from "../../media/icono4@2x.png";
-import Boton from "../../media/boton.png";
-import foto3 from "../../media/foto3@2x.png";
 import "../../css/bootstrap.min.css";
 import "./eventos.css";
 import {BrowserRouter as Router, 

@@ -1,5 +1,5 @@
 import React,{Component,Fragment} from 'react'
-import Carrousel from "../../componentes/Carrousel";
+import Carousel from "../Carousel";
 import Encabezado from '../../componentes/encabezado/Encabezado';
 import Footer from '../../componentes/footer/Footer';
 import Testimonials from '../../componentes/carrusel/Testimonials';
@@ -16,7 +16,7 @@ const Inicio = () => {
           <Fragment>
           <Encabezado/>
        
-          <Carrousel/> 
+          <Carousel/> 
 
         <Recomendados/>
          
