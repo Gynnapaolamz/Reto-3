@@ -73,16 +73,16 @@ render(props){
                 </div>
                 <div className="container-fluid px-5">
                     <Link className="navbar-brand" to="/inicio">Inicio</Link>
-                    <Link className="navbar-brand" to="/nosotros">Quienes Somos</Link>
-                    <Link className="navbar-brand" to="/menu">Menú</Link>
+                    <Link className="navbar-brand" to="/nosotros">Quienes Somos</Link> 
                     <Link className="navbar-brand" to="/servicios">Servicios</Link>
                     <Link className="navbar-brand" to="/contacto">Contactanos</Link>
                     
                     
                     <button className="navbar-brand disabled botonReserva" onClick={this.handleOpenModal} type="button">Reserva en linea </button> 
+                    <Link className="navbar-brand" to="/menu"><img className="boton" src="https://firebasestorage.googleapis.com/v0/b/juvetic-reto3.appspot.com/o/logomenu.png?alt=media&token=c6dab62a-9407-4527-9401-0159c9bdd80f" width="40" height="40"/></Link>
                     <Link className="navbar-brand disabled" to="/carrito" tabindex="-1" aria-disabled="true">
                         <img 
-                          src="https://firebasestorage.googleapis.com/v0/b/juvetic-reto3.appspot.com/o/cart.png?alt=media&token=15644351-be5d-4df9-9528-c44c6d3f2765"
+                          src="https://firebasestorage.googleapis.com/v0/b/juvetic-reto3.appspot.com/o/cart.png?alt=media&token=032bf9be-6539-4b1e-a411-e3fd840623e9"
                           width="40" 
                           height="40"/>
                         </Link>
