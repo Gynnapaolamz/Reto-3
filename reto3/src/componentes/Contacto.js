@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
 import "../css/bootstrap.min.css";
 import emailjs from 'emailjs-com';
+import "../css/imagen.css";
 const spanStyles = {
 
     textAling: 'center'

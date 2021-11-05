@@ -13,6 +13,7 @@ const ListPlatos = () => {
                 <Plato
                     imagen = {data.imagen}
                      platoName={data.platoName}
+                     descripcion={data.descripcion}
                      precio={data.precio}
                      />
                 </div>

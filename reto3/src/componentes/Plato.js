@@ -83,6 +83,7 @@ class Plato extends Component{
         <div className="cardEsta">
           <img src={this.props.imagen} alt={this.props.platoName}/>
           <h4>{this.props.platoName}</h4>
+          <p>{this.props.descripcion}</p>
           <p>${this.props.precio}</p>
           <form onSubmit={this.handleSubmit}>
               <input class="text" type="text" name="producto" value={this.props.platoName} hidden/>
