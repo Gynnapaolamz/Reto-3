@@ -27,7 +27,6 @@ const MainContainer = () =>{
                     <Route exact path="/inicio" component={Inicio}/>
                     <Route exact path="/" component={Inicio}/>
                     <PrivateRoutes exact path="/update-profile" component={UpdateProfile} />
-                    <Route exact path="/login" component={Login} />
                     <Route exact path="/signup" component={Signup} />
                     <Route exact path="/forgot-password" component={ForgotPassword} />
                     <Route exact path="/nosotros"  component={QuienesSomos}/>

@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
-import "../css/bootstrap.min.css";
-import "../css/imagen.css";
+//import "../css/bootstrap.min.css";
+//import "../css/imagen.css";
+import "../css/Plato.css";
 
 const spanStyles = {
 
@@ -56,7 +57,7 @@ class Plato extends Component{
 
     return (
         <>
-       
+       {/*
         <div className="card shadow mb-1 rounded" style={spanStyles}>
             <img src={this.props.imagen}  className="card-img-top imgSizeMenu" alt="card-grid-image"/>
             <div className="card-body">
@@ -77,7 +78,23 @@ class Plato extends Component{
               </form>
             </div>
           </div>
- 
+       */}
+
+        <div className="cardEsta">
+          <img src={this.props.imagen} alt={this.props.platoName}/>
+          <h4>{this.props.platoName}</h4>
+          <p>${this.props.precio}</p>
+          <form onSubmit={this.handleSubmit}>
+              <input class="text" type="text" name="producto" value={this.props.platoName} hidden/>
+              <input class="text" type="text" name="precio" value={this.props.precio} hidden/>
+              <input class="numero" type="number" name="cantidad" min="1"/>
+              <br></br>
+              <br></br>
+              <button className="botonAñadir" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Añadir al carrito
+              </button>
+          </form>
+        </div>
          
           </>
           )
