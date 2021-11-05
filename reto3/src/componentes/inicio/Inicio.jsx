@@ -16,7 +16,7 @@ const Inicio = () => {
           <Fragment>
           <Encabezado/>
        
-          <Carousel/> 
+          
 
         <Recomendados/>
          

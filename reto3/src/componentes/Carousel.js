@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../../src/css/bootstrap.min.css";
+import "../css/bootstrap.min.css";
 import "../css/carrousel.css"
 import {BrowserRouter as Router, 
     Route, 
