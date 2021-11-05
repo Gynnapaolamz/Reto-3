@@ -1,5 +1,4 @@
 import React from 'react';
-//import "./footer.css";
 //import "../../css/bootstrap.min.css";
 //import "../../headers.css";
 import {Link} from "react-router-dom";
