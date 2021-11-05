@@ -14,6 +14,7 @@
 
 footer{
     width: 100%;
+    
     padding: 50px 0px;
     background-image: url(https://firebasestorage.googleapis.com/v0/b/juvetic-reto3.appspot.com/o/background-footer.svg?alt=media&token=e6b995ec-f0b6-41b9-ae38-87444283a8c7);
     background-size: cover;
@@ -29,8 +30,9 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
+    height:260px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 15px;
 }
 
 .box__footer{
@@ -46,11 +48,12 @@ footer{
 
 .box__footer .terms{
     max-width: 350px;
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: 500;
     color: #7a7a7a;
     font-size: 18px;
     align-items: center;
+    margin-left: 0px;
 }
 
 .box__footer h2{
