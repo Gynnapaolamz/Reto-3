@@ -31,7 +31,7 @@ const Comment = ({
   return (
     <div key={comment.id} className="comment">
       <div className="comment-image-container">
-        <img src="/user-icon.png" />
+        <img src="https://firebasestorage.googleapis.com/v0/b/juvetic-reto3.appspot.com/o/user-icon.png?alt=media&token=d792c9fa-dcaf-4a93-9fbe-73e123e71349" />
       </div>
       <div className="comment-right-part">
         <div className="comment-content">
