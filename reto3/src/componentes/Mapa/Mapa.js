@@ -20,22 +20,16 @@ const Mapa = () =>{
             <div className="container-mapa">
         <h1>Mapa del sitio</h1>
       
-        <ul className="nav nav-pills">
-
+        <ul className="nav-mapa nav-pills">
+        <div className="container-mp">
           <li role="presentation"><Link className="navbar-brand2" to="/">Inicio</Link></li>
           <li role="presentation"><Link className="navbar-brand2" to="/nosotros">Quienes Somos</Link></li>
           <li role="presentation"><Link className="navbar-brand2" to="/menu">Menu</Link></li>
           <li role="presentation"><Link className="navbar-brand2" to="/servicios">Servicios</Link></li>
           <li role="presentation"><Link className="navbar-brand2" to="/contacto">Contactanos</Link></li>
-
-          <li role="presentation"><Link to="/inicio">Inicio</Link></li>
-          <li role="presentation"><Link to="/nosotros">Quienes somos</Link></li>
-          <li role="presentation"><Link to="/menu">Menu</Link></li>
-          <li role="presentation"><Link to="/servicios">Servicios</Link></li>
-          <li role="presentation"><Link to="/contacto">Contactanos</Link></li>
-
+          </div>
         </ul>
-      
+       
         <section id="sec1">
       
           <h2>Inicio</h2>
