@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
 import "../../css/bootstrap.min.css";
+import "./historia.css";
 
 const Historia = () => {
     return (  
@@ -14,8 +15,7 @@ const Historia = () => {
                 </div>
     
                 <div className="container texto">
-                    <p className="nuestra">NUESTRA</p>
-                    <h1 className="Historia">Historia</h1>
+                    <h1 className="Historia">Nuestra Historia</h1>
                     <p className="parrafo">Hace veintiocho años ya, en un rincón de este barrio entrañable aún
                                         herido por el terremoto, empezamos a cocinar entre amigos para
                                         los amigos.<br></br>
