@@ -15,6 +15,7 @@ import Menu from '../Menu/ContainerMenu';
 import Inicio from '../inicio/Inicio';
 import Carrito from '../Carrito/CarritoCountainer';
 import Mapa from '../Mapa/Mapa';
+import Reserva from "../reserva"
 
 
 const MainContainer = () =>{
@@ -35,6 +36,7 @@ const MainContainer = () =>{
                     <Route exact path="/carrito"  component={Carrito}/>
                     <Route exact path="/menu" component={Menu}/>
                     <Route exact path="/mapaSitio" component={Mapa}/>
+                    <Route exact path="/reservaLinea" component={Reserva}/>
                 </Switch>
             </AuthProvider>
         </Router>

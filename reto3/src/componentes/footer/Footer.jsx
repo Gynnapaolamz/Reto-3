@@ -2,7 +2,6 @@ import React from 'react';
 //import "../../css/bootstrap.min.css";
 //import "../../headers.css";
 import {Link} from "react-router-dom";
-import Mapa from "../../Ma"
 import './Estilos.css';
 
 const Footer = () => {
@@ -33,7 +32,7 @@ const Footer = () => {
                 </div>
                 <div class="box__footer">
                     <h2>Compañia</h2>
-                    <Link to="/Mapa" >Mapa del sitio</Link>
+                    <Link to="/mapaSitio" >Mapa del sitio</Link>
                     <Link to="/contacto" >Contactanos</Link>
                     <Link to="/reservaLinea" >Reserva</Link>  
                           
