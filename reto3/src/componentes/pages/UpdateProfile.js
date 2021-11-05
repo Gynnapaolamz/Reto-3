@@ -80,7 +80,7 @@ const UpdateProfile = () => {
                     placeholder="Confirmar contraseña"
                     />  
 
-                <button  disabled={loading} type="submit" className="btn">Actualizar</button>
+                <button  disabled={loading} type="submit" className="btnLogin">Actualizar</button>
                 <p><Link to='/inicio' ><span className="span">Regresar</span></Link></p>
             </form>
           </div>

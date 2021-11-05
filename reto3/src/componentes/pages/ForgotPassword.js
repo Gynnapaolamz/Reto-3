@@ -45,7 +45,7 @@ const ForgotPassword = () =>{
                     placeholder="Nombre de usuario"
                     />
             
-                <button  disabled={loading} type="submit" className="btn">Restaurar contraseña</button>
+                <button  disabled={loading} type="submit" className="btnLogin">Restaurar contraseña</button>
                 <p><Link to='/login' ><span className="span">Regresar</span></Link></p>
             </form>
           </div>

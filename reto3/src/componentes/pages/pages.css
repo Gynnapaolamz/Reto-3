@@ -95,7 +95,7 @@
     align-items: center;
 }
 
-.input, .btn {
+.input, .btnLogin {
     width: 90%;
     height: 3.125rem;
     font-size: 1em;
@@ -114,7 +114,7 @@
     border: 2px solid var(--button-bg);
 }
 
-.btn {
+.btnLogin {
     width: 80%;
     letter-spacing: 1px;
     text-transform: uppercase;
