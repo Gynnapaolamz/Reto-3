@@ -82,11 +82,16 @@ render(props){
                     <Link className="navbar-brand" to="/menu"><img className="boton" src="https://firebasestorage.googleapis.com/v0/b/juvetic-reto3.appspot.com/o/logomenu.png?alt=media&token=c6dab62a-9407-4527-9401-0159c9bdd80f" width="40" height="40"/></Link>
                     <Link className="navbar-brand disabled" to="/carrito" tabindex="-1" aria-disabled="true">
                         <img 
-                          src="https://firebasestorage.googleapis.com/v0/b/juvetic-reto3.appspot.com/o/cart.png?alt=media&token=032bf9be-6539-4b1e-a411-e3fd840623e9"
+                          src="https://firebasestorage.googleapis.com/v0/b/juvetic-reto3.appspot.com/o/shopping-cart-solid.svg?alt=media&token=64453575-c552-4983-8bb5-1e8ebf7b6390"
                           width="40" 
                           height="40"/>
                         </Link>
-                    <Link className="navbar-brand" to="/login"> Login </Link>
+                    <Link className="navbar-brand" to="/login">
+                    <img 
+                          src="https://firebasestorage.googleapis.com/v0/b/juvetic-reto3.appspot.com/o/sign-in-alt-solid.svg?alt=media&token=c2c5817d-275a-493b-aca7-87b563c59d8b"
+                          width="40" 
+                          height="40"/>
+                    </Link>
                     <Botones/>
             </div>
         </nav>

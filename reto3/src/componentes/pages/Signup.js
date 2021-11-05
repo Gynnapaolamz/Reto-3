@@ -51,7 +51,7 @@ const Signup = () =>{
                     ref={passwordRef}
                     placeholder="Contraseña"
                     />
-                <button  disabled={loading} type="submit" className="btn">Registrate</button>
+                <button  disabled={loading} type="submit" className="btnLogin">Registrate</button>
                 <p>Ya tienes cuenta?<Link to='/login' ><span className="span">Iniciar sesión</span></Link></p>
             </form>
           </div>

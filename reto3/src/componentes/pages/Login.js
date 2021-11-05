@@ -53,7 +53,7 @@ const Login = () =>{
                     placeholder="Contraseña"
                     />
                 <p>Olvidaste tu contraseña? <Link to='/forgot-password'><span className="span">Recuperarla</span></Link></p>
-                <button  disabled={loading} type="submit" className="btn">Iniciar sesión</button>
+                <button  disabled={loading} type="submit" className="btnLogin">Iniciar sesión</button>
                 <p>Ya tienes cuenta?<Link to='/signup' ><span className="span">Registrarse</span></Link></p>
             </form>
           </div>
